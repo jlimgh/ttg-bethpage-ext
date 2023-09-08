@@ -1,0 +1,18 @@
+{
+    "name": "Bethpage Tee Time Timer",
+    "version": "0.1.0",
+    "description": "Timer to refresh and grab a tee time for Bethpage",
+    "permissions": ["tabs"],
+    "host_permissions": ["https://*.foreupsoftware.com/*"],
+    "content_scripts": [
+      {
+        "matches": ["https://*.foreupsoftware.com/*"],
+        "js": ["contentScript.js"]
+      }
+    ],
+    "action": {
+      "default_title": "Bethpage Tee Time Timer",
+      "default_popup": "popup.html"
+    },
+    "manifest_version": 3
+  }
